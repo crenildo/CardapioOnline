@@ -44,7 +44,7 @@ Execute o projeto com:
 
 ./mvnw spring-boot:run
 
-### **3️⃣ Configurar o Frontend
+### **3️⃣ Configurar o Frontend**
 
 Instale o Node.js e o npm.
 
