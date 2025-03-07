@@ -1,0 +1,26 @@
+🚀 Passo a Passo para Criar a UML do Projeto
+1️⃣ Definir os Atores e Casos de Uso (Texto)
+
+Liste quem interage com o sistema (atores).
+Defina o que cada ator pode fazer (casos de uso).
+
+2️⃣ Criar o Diagrama de Casos de Uso (Bonequinho)
+
+Desenhe os atores (bonequinhos).
+Conecte-os às ações (elipses com os casos de uso).
+
+3️⃣ Criar o Diagrama de Classes (Estrutura do Sistema)
+
+Identifique as principais entidades (ex: Produto, Pedido, Cliente).
+Defina atributos e métodos de cada classe.
+Estabeleça os relacionamentos entre as classes.
+
+4️⃣ Criar o Diagrama de Sequência (Fluxo de Interações)
+
+Mostre a ordem das interações entre os elementos do sistema.
+Inclua chamadas de métodos, respostas e mudanças de estado.
+
+5️⃣ Criar o Diagrama de Banco de Dados (Opcional, mas Recomendado)
+
+Defina as tabelas e seus relacionamentos (ex: tabela pedidos, produtos).
+Especifique os tipos de dados e chaves primárias/estrangeiras.

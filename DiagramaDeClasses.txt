@@ -1,0 +1,57 @@
+Vendedor
+
+id: UUID
+nome: String
+email: String
+senha: String
+
+-------------------
+
+Cliente
+
+id: UUID
+telefone: String
+nome: String
+endereco: String
+
+-------------------
+
+Produto
+
+id: UUID
+nome: String
+descricao: String
+preco: Decimal
+disponibilidade: Boolean
+
+-------------------
+
+Pedido
+
+id: UUID
+cliente: Cliente
+itens: List<ItensDoPedido>
+status: Enum (PENDENTE, APROVADO, CANCELADO, ENTREGUE)
+formaPagamento: Enum (PIX, CREDITO, DEBITO)
+enderecoEntrega: String
+dataCriacao: DateTime
+
+-------------------
+
+ItensDoPedido
+
+produto: Produto
+quantidade: Int
+total: Decimal
+
+-------------------
+
+Transacao
+
+id: UUID
+pedido: Pedido
+valor: Decimal
+metodoPagamento: Enum (PIX, CREDITO, DEBITO)
+status: Enum (PENDENTE, APROVADO, RECUSADO, ESTORNADO)
+dataCriacao: DateTime
+dataAtualizacao: DateTime
