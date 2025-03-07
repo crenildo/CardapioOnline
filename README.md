@@ -32,7 +32,7 @@
 git clone https://github.com/crenildo/CardapioOnline.git
 cd seu-repositorio
 
-### **2️⃣ Configurar o Backend
+### **2️⃣ Configurar o Backend**
 
 Instale o Java e o Maven caso não tenha.
 
