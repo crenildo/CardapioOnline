@@ -2,8 +2,6 @@
 
 # 📌 CardapioOnline
 
-> Breve descrição do que o projeto faz.
-
 ## 🚀 Tecnologias Utilizadas
 - **Frontend:** React.js + TypeScript + Vite
 - **Backend:** Spring Boot + Java + JWT
@@ -16,7 +14,11 @@
 ## 📂 Estrutura do Projeto
 
 
-📦 projeto┣ 📂 frontend  (React.js + TypeScript)┣ 📂 backend  (Spring Boot + Java)┣ 📂 banco  (SQL Server)┗ 📜 README.md
+📦 projeto
+┣ 📂 frontend  (React.js + TypeScript)
+┣ 📂 backend  (Spring Boot + Java)
+┣ 📂 banco  (SQL Server)
+┗ 📜 README.md
 
 
 ## 📥 Instalação e Configuração
@@ -57,9 +59,13 @@ npm run dev
 📌 Funcionalidades
 
 ✅ Cadastro e login de usuários
+
 ✅ Chat em tempo real
+
 ✅ Sistema de pedidos entre clientes e vendedores
+
 ✅ Integração com banco de dados SQL Server
+
 ✅ Autenticação com JWT
 
 📜 Licença
