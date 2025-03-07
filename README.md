@@ -72,6 +72,7 @@ npm run dev
 
 ✅ Autenticação com JWT
 
+**-**
 
 📜 Licença
 
