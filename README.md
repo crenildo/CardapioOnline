@@ -60,7 +60,7 @@ Rode o projeto:
 
 npm run dev
 
-📌 Funcionalidades
+📌 **Funcionalidades**
 
 ✅ Cadastro e login de usuários
 
@@ -71,6 +71,7 @@ npm run dev
 ✅ Integração com banco de dados SQL Server
 
 ✅ Autenticação com JWT
+
 
 📜 Licença
 
