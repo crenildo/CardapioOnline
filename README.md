@@ -15,9 +15,13 @@
 
 
 📦 projeto
+
 ┣ 📂 frontend  (React.js + TypeScript)
+
 ┣ 📂 backend  (Spring Boot + Java)
+
 ┣ 📂 banco  (SQL Server)
+
 ┗ 📜 README.md
 
 
