@@ -74,7 +74,7 @@ npm run dev
 
 **-**
 
-📜 Licença
+## 📜 Licença
+Este é um software proprietário. Nenhuma parte deste código pode ser copiada, distribuída ou modificada sem autorização expressa do autor.
 
-Este projeto está sob a licença MIT.
 
