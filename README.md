@@ -7,7 +7,7 @@
 - **Backend:** Spring Boot + Java + JWT
 - **Banco de Dados:** SQL Server
 - **Gerenciamento de Estado:** Redux Toolkit
-- **Estilização:** Tailwind CSS
+- **Estilização:** CSS
 - **Comunicação em Tempo Real:** Socket.io
 - **Autenticação:** JWT + Spring Security
 
