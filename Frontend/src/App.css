@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* -------------------------------------------------------------------------------------------------- */
+
+.body {
+  background-image: url(./assets/fundoComida2.png);
+  background-repeat: repeat;
+  background-size: 100px;
+  display: flex; /* Ativa o flexbox */
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  width: 100vw; /* Ocupa toda a largura da tela */
+  height: 100vh; /* Ocupa toda a altura da tela */
+  flex-direction: column;
+}
+
+/* -------------------------------------------------------------------------------------------------- */
+
+/* Cointerner caixa invisivel onde agrupamos as grades */
+.container {
+  background-color: rgb(71, 83, 255);
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  
+}
+
+@media screen and (min-width: 768px){
+  .container {
+    width: 575px;   /* Tamanho de um celular médio */
+    height: 967px;  /* Altura de um celular médio */
+    border-radius: 10px; /* Cantos arredondados para ficar mais bonito */
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2); /* Sombra para destacar no fundo */
+  }
+}
+
+/* -------------------------------------------------------------------------------------------------- */
+
+/* Logo, nome da loja, aberto até, temOunãoPedidoMinimo, perfilLoja, compartilhar */
+.menuSuperior{
+  background-color: rgb(255, 71, 71);
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 14%;
+  
+}
+
+/* -------------------------------------------------------------------------------------------------- */
+
+/* Menu horizontal que leva as topicos de pedidos, bebidas, porções, Hamburgues */
+/* ao clicar é levado para baixo ao menu correspondente*/
+.menuOpcoes {
+  background-color: rgb(172, 172, 172);
+  width: 100%;
+  height: 6%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-x: auto; /* Permite rolagem horizontal */
+  white-space: nowrap; /* Evita quebra de linha */
+  padding-left: 10px;
+}
+
+/* Estiliza o scroll apenas em telas grandes */
+@media (min-width: 768px) {
+  .menuOpcoes {
+    scrollbar-width: thin; /* Firefox: Deixa a barra de rolagem fina */
+    scrollbar-color: #007bff #333; /* Firefox: cor do scroll e do fundo */
+  }
+
+  /* Chrome, Edge e Safari */
+  .menuOpcoes::-webkit-scrollbar {
+    height: 8px; /* Altura da barra de rolagem */
+  }
+
+  .menuOpcoes::-webkit-scrollbar-track {
+    background: #333; /* Cor do fundo da barra */
+    border-radius: 5px;
+  }
+
+  .menuOpcoes::-webkit-scrollbar-thumb {
+    background: #007bff; /* Cor do scroll */
+    border-radius: 5px;
+  }
+
+  .menuOpcoes::-webkit-scrollbar-thumb:hover {
+    background: #0056b3; /* Cor ao passar o mouse */
+  }
+}
+
+/* Oculta a barra de rolagem no mobile */
+@media (max-width: 767px) {
+  .menuOpcoes {
+    -ms-overflow-style: none; /* Remove o scroll no Edge/IE */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .menuOpcoes::-webkit-scrollbar {
+    display: none; /* Remove o scroll no Chrome, Safari e Edge */
+  }
+}
+
+/* -------------------------------------------------------------------------------------------------- */
+/* Menu dos mais pedidos, horizontal, opções mais pedidas da loja */
+.maisPedidos {
+  background-image: url(./assets/fundoComida2.png);
+  background-repeat: repeat;
+  background-size: 100px;
+  width: 100%;
+  height: 200px; /* Altura fixa para melhor controle */
+  display: flex;
+  align-items: center;
+  overflow-x: auto ; /* Esconde a barra de scroll */
+  gap: 15px; /* Espaço entre os itens */
+}
+
+/* Efeitos de hover para desktop */
+@media (hover: hover) {
+  .pedido-item:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+}
+
+/* Estiliza o scroll apenas em telas grandes */
+@media (min-width: 768px) {
+  .maisPedidos {
+    scrollbar-width: thin; /* Firefox: Deixa a barra de rolagem fina */
+    scrollbar-color: #007bff #333; /* Firefox: cor do scroll e do fundo */
+  }
+
+  /* Chrome, Edge e Safari */
+  .maisPedidos::-webkit-scrollbar {
+    height: 8px; /* Altura da barra de rolagem */
+  }
+
+  .maisPedidos::-webkit-scrollbar-track {
+    background: #333; /* Cor do fundo da barra */
+    border-radius: 5px;
+  }
+
+  .maisPedidos::-webkit-scrollbar-thumb {
+    background: #007bff; /* Cor do scroll */
+    border-radius: 5px;
+  }
+
+  .maisPedidos::-webkit-scrollbar-thumb:hover {
+    background: #0056b3; /* Cor ao passar o mouse */
+  }
+}
+
+/* Otimização para mobile */
+@media (max-width: 768px) {
+  .maisPedidos {
+    height: 180px; /* Altura menor para dispositivos móveis */
+  }
+  
+  .pedido-item {
+    flex: 0 0 auto;
+    width: 130px; /* Largura fixa incluindo margens */
+    text-align: center;
+    transition: transform 0.3s ease; /* Efeito suave ao interagir */
+  }
+
+  /* Imagem dos itens */
+  .maisPedidosImage {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra suave */
+    border: 2px solid white; /* Borda branca para contraste */
+  }
+
+  .pedido-item:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+}
+
+/* -------------------------------------------------------------------------------------------------- */
+
+/* Onde ficam os itens das opções do menu de opções, vertical */
+.menuItens{
+  background-color: rgb(255, 71, 209);
+  width: 100%;
+  height: 10%;
+}
+
+/* -------------------------------------------------------------------------------------------------- */
+
+/* Rodapé com as opções "inicio", Promos, carrinho */
+.footer{
+  background-color: rgb(92, 255, 71);
+  width: 100%;
+  height: 10%;
+}

@@ -1,0 +1,95 @@
+/* -------------------------------------------------------------------------------------------------- */
+/* menuSuperior menuSuperior menuSuperior menuSuperior menuSuperior menuSuperior menuSuperior */
+
+/*CONTAINER*/
+.nomeEicone{
+  display: flex;
+  align-items: center;
+}
+
+/*IMAGEM*/
+.profile-image {
+  width: 50px; /* Ajuste o tamanho */
+  height: 50px;
+  border-radius: 50%; /* Deixa a imagem redonda */
+  object-fit: cover; /* Garante que a imagem fique bem enquadrada */
+  margin: 10px;
+}
+
+/*TEXTO*/
+.nomeLoja {
+  font-size: 15px; /* Ajusta o tamanho do texto de status */
+  color: white;
+}
+
+/*TEXTO*/
+.status {
+  font-size: 14px; /* Ajusta o tamanho do texto de status */
+  color: white;
+}
+
+/*IMAGEM*/
+.iconeCompartilhar{
+  width: 50px; /* Ajuste o tamanho */
+  height: 50px;
+  border-radius: 50%; /* Deixa a imagem redonda */
+  object-fit: cover; /* Garante que a imagem fique bem enquadrada */
+  padding: 10px;
+}
+
+/* menuSuperior menuSuperior menuSuperior menuSuperior menuSuperior menuSuperior menuSuperior */
+
+/* -------------------------------------------------------------------------------------------------- */
+
+/* menuOpcoes menuOpcoes menuOpcoes menuOpcoes menuOpcoes menuOpcoes menuOpcoes menuOpcoes */
+
+.menuItem {
+  min-width: auto; /* Ajusta automaticamente ao tamanho do texto */
+  padding: 10px 10px 10px ;
+  background-color: #007bff;
+  color: white;
+  text-align: start;
+  border-radius: 8px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: inline-block; /* Garante que o tamanho se ajuste ao conteúdo */
+}
+
+.menu-item:hover {
+  background-color: #0056b3;
+}
+
+/* menuOpcoes menuOpcoes menuOpcoes menuOpcoes menuOpcoes menuOpcoes menuOpcoes menuOpcoes */
+
+/* -------------------------------------------------------------------------------------------------- */
+
+/* maisPedidos maisPedidos maisPedidos maisPedidos maisPedidos maisPedidos maisPedidos */
+
+/* Container de cada item */
+.pedido-item {
+  flex: 0 0 auto;
+  width: 130px; /* Largura fixa incluindo margens */
+  text-align: center;
+  transition: transform 0.3s ease; /* Efeito suave ao interagir */
+}
+
+/* Imagem dos itens */
+.maisPedidosImage {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra suave */
+  border: 2px solid white; /* Borda branca para contraste */
+}
+
+/* Nome do produto */
+.pedido-nome {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  padding: 0 5px;
+}
