@@ -3,7 +3,7 @@
 # 📌 CardapioOnline
 
 ## 🚀 Tecnologias Utilizadas
-- **Frontend:** React.js + TypeScript + Vite
+- **Frontend:** Next.js + TypeScript
 - **Backend:** Spring Boot + Java + JWT
 - **Banco de Dados:** SQL Server
 - **Gerenciamento de Estado:** Redux Toolkit

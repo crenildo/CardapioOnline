@@ -1,0 +1,46 @@
+.menuSuperior{
+    background-color: rgb(255, 71, 71);
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 14%;
+    
+}
+
+/*CONTAINER*/
+.nomeEicone{
+    display: flex;
+    align-items: center;
+  }
+  
+  /*IMAGEM*/
+  .profileImage {
+    width: 50px; /* Ajuste o tamanho */
+    height: 50px;
+    border-radius: 50%; /* Deixa a imagem redonda */
+    object-fit: cover; /* Garante que a imagem fique bem enquadrada */
+    margin: 10px;
+  }
+  
+  /*TEXTO*/
+  .nomeLoja {
+    font-size: 15px; /* Ajusta o tamanho do texto de status */
+    color: white;
+  }
+  
+  /*TEXTO*/
+  .status {
+    font-size: 14px; /* Ajusta o tamanho do texto de status */
+    color: white;
+  }
+  
+  /*IMAGEM*/
+  .iconeCompartilhar{
+    width: 50px; /* Ajuste o tamanho */
+    height: 50px;
+    border-radius: 50%; /* Deixa a imagem redonda */
+    object-fit: cover; /* Garante que a imagem fique bem enquadrada */
+    padding: 10px;
+  }

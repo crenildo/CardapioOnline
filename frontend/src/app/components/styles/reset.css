@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* -------------------------------------------------------------------------------------------------- */
+  
+  .body {
+    background-image: url(@/../../../../../public/fundoComida2.png);
+    background-repeat: repeat;
+    background-size: 100px;
+    display: flex; /* Ativa o flexbox */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    width: 100vw; /* Ocupa toda a largura da tela */
+    height: 100vh; /* Ocupa toda a altura da tela */
+    flex-direction: column;
+  }
+  
+  /* -------------------------------------------------------------------------------------------------- */
+  

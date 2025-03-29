@@ -1,0 +1,33 @@
+FRONT ---------------------------------------
+
+TITULO(TIPO) - (vem da tabela tipos).
+id
+nome
+descrição
+valor
+image
+
+FRONT ---------------------------------------
+
+DB ------------------------------------------
+
+tipo:
+
+id
+name
+
+items:
+
+id
+name
+descrição
+preço
+tipo(foregenkey)
+image
+
+Consultar Itens por Tipo:
+SELECT items.name, items.price, item_types.name AS type
+FROM items
+JOIN item_types ON items.type_id = item_types.id
+WHERE item_types.name = 'Hambúrguer Tradicional';
+

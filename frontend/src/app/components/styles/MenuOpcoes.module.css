@@ -1,0 +1,68 @@
+.menuOpcoes {
+    background-color: rgb(172, 172, 172);
+    width: 100%;
+    height: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: auto; /* Permite rolagem horizontal */
+    white-space: nowrap; /* Evita quebra de linha */
+    padding-left: 10px;
+  }
+  
+  /* Estiliza o scroll apenas em telas grandes */
+  @media (min-width: 768px) {
+    .menuOpcoes {
+      scrollbar-width: thin; /* Firefox: Deixa a barra de rolagem fina */
+      scrollbar-color: #007bff #333; /* Firefox: cor do scroll e do fundo */
+    }
+  
+    /* Chrome, Edge e Safari */
+    .menuOpcoes::-webkit-scrollbar {
+      height: 8px; /* Altura da barra de rolagem */
+    }
+  
+    .menuOpcoes::-webkit-scrollbar-track {
+      background: #333; /* Cor do fundo da barra */
+      border-radius: 5px;
+    }
+  
+    .menuOpcoes::-webkit-scrollbar-thumb {
+      background: #007bff; /* Cor do scroll */
+      border-radius: 5px;
+    }
+  
+    .menuOpcoes::-webkit-scrollbar-thumb:hover {
+      background: #0056b3; /* Cor ao passar o mouse */
+    }
+  }
+  
+  /* Oculta a barra de rolagem no mobile */
+  @media (max-width: 767px) {
+    .menuOpcoes {
+      -ms-overflow-style: none; /* Remove o scroll no Edge/IE */
+      scrollbar-width: none; /* Firefox */
+    }
+  
+    .menuOpcoes::-webkit-scrollbar {
+      display: none; /* Remove o scroll no Chrome, Safari e Edge */
+    }
+  }
+
+
+  .menuItem {
+    min-width: auto; /* Ajusta automaticamente ao tamanho do texto */
+    padding: 10px 10px 10px ;
+    background-color: #007bff;
+    color: white;
+    text-align: start;
+    border-radius: 8px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: inline-block; /* Garante que o tamanho se ajuste ao conteúdo */
+  }
+  
+  .menu-item:hover {
+    background-color: #0056b3;
+  }
