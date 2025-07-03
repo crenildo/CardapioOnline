@@ -1,0 +1,56 @@
+<div>
+                <h1>Tortas Tradicionais</h1>
+                {item(1).map((torta) => (
+                    <div key={torta.id} className={styles.item}>
+                        <div className={styles.nomeDescPreco}>
+                            <h2 className={styles.itemNome}>{torta.nome}</h2> 
+                            <p className={styles.itemDescricao}>{torta.descricao}</p>
+                            <p className={styles.itemPreco}>R$ {torta.preco}</p>
+                        </div>
+                        <Image 
+                            src={torta.imagem} 
+                            alt={torta.nome} 
+                            className={styles.menuItensImage} 
+                        />
+                    </div>
+                ))}
+                
+            </div>
+
+            <div>
+                <h1>Sucos</h1>
+                {item(4).map((suco) => (
+                    <div key={suco.id} className={styles.item}>
+                        <div className={styles.nomeDescPreco}>
+                            <h2 className={styles.itemNome}>{suco.nome}</h2> 
+                            <p className={styles.itemDescricao}>{suco.descricao}</p>
+                            <p className={styles.itemPreco}>R$ {suco.preco}</p>
+                        </div>
+                        <Image 
+                            src={suco.imagem} 
+                            alt={suco.nome} 
+                            className={styles.menuItensImage} 
+                        />
+                    </div>
+                ))}
+                
+            </div>
+
+            <div>
+                <h1>Pasteis</h1>
+                {item(5).map((pastel) => (
+                    <div key={pastel.id} className={styles.item}>
+                        <div className={styles.nomeDescPreco}>
+                            <h2 className={styles.itemNome}>{pastel.nome}</h2> 
+                            <p className={styles.itemDescricao}>{pastel.descricao}</p>
+                            <p className={styles.itemPreco}>R$ {pastel.preco}</p>
+                        </div>
+                        <Image 
+                            src={pastel.imagem} 
+                            alt={pastel.nome} 
+                            className={styles.menuItensImage} 
+                        />
+                    </div>
+                ))}
+                
+            </div>

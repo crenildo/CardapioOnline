@@ -31,3 +31,8 @@ FROM items
 JOIN item_types ON items.type_id = item_types.id
 WHERE item_types.name = 'Hambúrguer Tradicional';
 
+
+OBS: 
+
+PESQUISAR QUAL É MAIS PERFORMATICO, FAZER A CONSULTA PELO BACKEND OU BANCO DE DADOS.
+

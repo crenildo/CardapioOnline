@@ -1,0 +1,41 @@
+/* styles/globals.css */
+.reset {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  background-image: url(/fundoComida2.png);
+  background-repeat: repeat;
+  background-size: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  
+}
+
+/* Cointerner caixa invisivel onde agrupamos as grades */
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  flex: 1; /* Faz com que o container ocupe o restante da tela */
+  overflow-y: auto; /* Permite rolagem no container se ultrapassar a altura */
+
+}
+
+
+@media screen and (min-width: 768px){
+  .container {
+    width: 575px;   /* Tamanho de um celular médio */
+    height: 967px;  /* Altura de um celular médio */
+    border-radius: 10px; /* Cantos arredondados para ficar mais bonito */
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2); /* Sombra para destacar no fundo */
+  }
+}

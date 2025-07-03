@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../../page.module.css";
+import styles from "@/app/resetGlobals.module.css"
 
 import MenuSuperior from "@/app/components/MenuSuperior";
 import MenuOpcoes from "@/app/components/MenuOpcoes";
@@ -9,8 +9,8 @@ import ScrollExample from "@/app/components/ScrollExample"; //Pagina de testes
 
 export default function ClienteCardapio() {
   return (
-    <div className="body">
-      <div className="container">
+    <div className={styles.body}>
+      <div className={styles.container}>
         <MenuSuperior />
         <MenuOpcoes />
         <MaisPedidos />

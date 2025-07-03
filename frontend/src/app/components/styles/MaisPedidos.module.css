@@ -1,105 +1,69 @@
+/* Estilos gerais para a seção "Mais Pedidos" */
 .maisPedidos {
-    background-image: url(@/../../../../../public/fundoComida3.png);
-    background-repeat: repeat;
-    background-size: 100px;
-    width: 100%;
-    height: 200px; /* Altura fixa para melhor controle */
-    display: flex;
-    align-items: center;
-    overflow-x: auto ; /* Esconde a barra de scroll */
-    gap: 15px; /* Espaço entre os itens */
-  }
-  
-  /* Efeitos de hover para desktop */
-  @media (hover: hover) {
-    .pedido-item:hover {
-      transform: scale(1.05);
-      cursor: pointer;
-    }
-  }
-  
-  /* Estiliza o scroll apenas em telas grandes */
-  @media (min-width: 768px) {
-    .maisPedidos {
-      scrollbar-width: thin; /* Firefox: Deixa a barra de rolagem fina */
-      scrollbar-color: #007bff #333; /* Firefox: cor do scroll e do fundo */
-    }
-  
-    /* Chrome, Edge e Safari */
-    .maisPedidos::-webkit-scrollbar {
-      height: 8px; /* Altura da barra de rolagem */
-    }
-  
-    .maisPedidos::-webkit-scrollbar-track {
-      background: #333; /* Cor do fundo da barra */
-      border-radius: 5px;
-    }
-  
-    .maisPedidos::-webkit-scrollbar-thumb {
-      background: #007bff; /* Cor do scroll */
-      border-radius: 5px;
-    }
-  
-    .maisPedidos::-webkit-scrollbar-thumb:hover {
-      background: #0056b3; /* Cor ao passar o mouse */
-    }
-  }
-  
-  /* Otimização para mobile */
-  @media (max-width: 768px) {
-    .maisPedidos {
-      height: 180px; /* Altura menor para dispositivos móveis */
-    }
-    
-    .pedido-item {
-      flex: 0 0 auto;
-      width: 130px; /* Largura fixa incluindo margens */
-      text-align: center;
-      transition: transform 0.3s ease; /* Efeito suave ao interagir */
-    }
-  
-    /* Imagem dos itens */
-    .maisPedidosImage {
-      width: 110px;
-      height: 110px;
-      object-fit: cover;
-      border-radius: 50%;
-      margin-bottom: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra suave */
-      border: 2px solid white; /* Borda branca para contraste */
-    }
-  
-    .pedido-item:hover {
-      transform: scale(1.05);
-      cursor: pointer;
-    }
-  }
+  background-image: url(@/../../../../../public/fundoComida3.png);
+  background-repeat: repeat;
+  background-size: 100px;
+  width: 100%;
+  height: 20vh; /* Altura fixa para controle */
+  display: flex;
+  align-items: center;
+  overflow-x: auto; /* Esconde a barra de rolagem horizontal */
+  gap: 15px; /* Espaço entre os itens */
+  scrollbar-width: thin; /* Para Firefox: barra de rolagem fina */
+  scrollbar-color: #007bff #333; /* Para Firefox: cor da barra de rolagem */
+}
 
-
-  /* Container de cada item */
+/* Container de cada item */
 .pedidoItem {
-    flex: 0 0 auto;
-    width: 130px; /* Largura fixa incluindo margens */
-    text-align: center;
-    transition: transform 0.3s ease; /* Efeito suave ao interagir */
+  flex: 0 0 auto;
+  width: 130px; /* Largura fixa incluindo margens */
+  text-align: center;
+  transition: transform 0.3s ease; /* Efeito suave ao interagir */
+}
+
+/* Imagem dos itens */
+.maisPedidosImage {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra suave */
+  border: 2px solid white; /* Borda branca para contraste */
+}
+
+/* Nome do produto */
+.pedidoNome {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  padding: 0 5px;
+}
+
+/* Efeitos de hover para desktop */
+.pedidoItem:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Estiliza o scroll em telas grandes */
+@media (min-width: 768px) {
+  .maisPedidos::-webkit-scrollbar {
+    height: 8px; /* Altura da barra de rolagem */
   }
-  
-  /* Imagem dos itens */
-  .maisPedidosImage {
-    width: 110px;
-    height: 110px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra suave */
-    border: 2px solid white; /* Borda branca para contraste */
+
+  .maisPedidos::-webkit-scrollbar-track {
+    background: #333; /* Cor do fundo da barra */
+    border-radius: 5px;
   }
-  
-  /* Nome do produto */
-  .pedidoNome {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #333;
-    margin: 0;
-    padding: 0 5px;
+
+  .maisPedidos::-webkit-scrollbar-thumb {
+    background: #007bff; /* Cor do scroll */
+    border-radius: 5px;
   }
+
+  .maisPedidos::-webkit-scrollbar-thumb:hover {
+    background: #0056b3; /* Cor ao passar o mouse */
+  }
+}

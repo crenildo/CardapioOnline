@@ -8,6 +8,7 @@
     overflow-x: auto; /* Permite rolagem horizontal */
     white-space: nowrap; /* Evita quebra de linha */
     padding-left: 10px;
+    
   }
   
   /* Estiliza o scroll apenas em telas grandes */

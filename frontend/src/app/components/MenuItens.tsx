@@ -1,28 +1,71 @@
-import styles from "./styles/MenuItens.module.css"
-import { tortas } from "../data/data";
+import styles from "./styles/MenuItens.module.css";
+// import { categoriaItens } from "../data/data";
 import Image from "next/image";
+import filtrarItens from "../data/data";
+import { itens } from "../data/data";
 
-export default function MenuItens(){
-    return(
-        <div className={styles.menuItens}>
-            <div>
-                <h1>Tortas Tradicionais</h1>
-                {tortas.map((torta) => (
-                    <div key={torta.id} className={styles.item}>
-                        <div className={styles.nomeDescPreco}>
-                            <h2 className={styles.itemNome}>{torta.nome}</h2> 
-                            <p className={styles.itemDescricao}>{torta.descricao}</p>
-                            <p className={styles.itemPreco}>R$ {torta.preco}</p>
-                        </div>
-                        <Image 
-                            src={torta.imagem} 
-                            alt={torta.nome} 
-                            className={styles.menuItensImage} 
-                        />
-                    </div>
-                ))}
-            </div>
+export default function MenuItens() {
+  // 1 torta
+  // 4 bebidas
+  // 5 pasteis
+  function item(x: number) {
+    return filtrarItens(x);
+  }
 
+  return (
+    <div className={styles.menuItens}>
+      
+      {/* Seção de Tortas */}
+      <h1>Tortas Tradicionais</h1>
+      {item(1).map((torta) => (
+        <div key={torta.id} className={styles.item}>
+          <div className={styles.nomeDescPreco}>
+            <h2 className={styles.itemNome}>{torta.nome}</h2>
+            <p className={styles.itemDescricao}>{torta.descricao}</p>
+            <p className={styles.itemPreco}>R$ {torta.preco}</p>
+          </div>
+          <Image
+            src={torta.imagem}
+            alt={torta.nome}
+            className={styles.menuItensImage}
+          />
         </div>
-    );
+      ))}
+      
+      {/* Seção de Sucos */}
+      <h1>Sucos</h1>
+      {item(4).map((suco) => (
+        <div key={suco.id} className={styles.item}>
+          <div className={styles.nomeDescPreco}>
+            <h2 className={styles.itemNome}>{suco.nome}</h2>
+            <p className={styles.itemDescricao}>{suco.descricao}</p>
+            <p className={styles.itemPreco}>R$ {suco.preco}</p>
+          </div>
+          <Image
+            src={suco.imagem}
+            alt={suco.nome}
+            className={styles.menuItensImage}
+          />
+        </div>
+      ))}
+      
+      {/* Seção de Pasteis */}
+      <h1>Pasteis</h1>
+      {item(5).map((pastel) => (
+        <div key={pastel.id} className={styles.item}>
+          <div className={styles.nomeDescPreco}>
+            <h2 className={styles.itemNome}>{pastel.nome}</h2>
+            <p className={styles.itemDescricao}>{pastel.descricao}</p>
+            <p className={styles.itemPreco}>R$ {pastel.preco}</p>
+          </div>
+          <Image
+            src={pastel.imagem}
+            alt={pastel.nome}
+            className={styles.menuItensImage}
+          />
+        </div>
+      ))}
+      
+    </div>
+  );
 }
